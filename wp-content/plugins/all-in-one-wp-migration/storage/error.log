@@ -4,3 +4,12 @@ May 22 2018 07:04:19
 May 22 2018 07:04:19
 {"Number":2,"Message":"rmdir(C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\wwssc9ml8m8d): Directory not empty","File":"C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":54}
 
+May 24 2018 09:30:58
+{"Number":2,"Message":"unlink(C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\ogjre9maemlj\\dev.pixel.com-20180524-093048-992.wpress): Permission denied","File":"C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+May 24 2018 09:30:58
+{"Number":2,"Message":"unlink(C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\ogjre9maemlj\\filemap.list): Permission denied","File":"C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+May 24 2018 09:30:58
+{"Number":2,"Message":"rmdir(C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\ogjre9maemlj): Directory not empty","File":"C:\\xampp\\htdocs\\cola\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":54}
+
