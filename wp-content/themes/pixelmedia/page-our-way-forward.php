@@ -2,28 +2,18 @@
 /**
  * Template Name: Our Way Forward
  */
+$thumb_item = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 ?>
-
-<div class="banner-header-wrapper">
+<div class="banner-header-wrapper" style="background: url('<?php echo $thumb_item ?>') no-repeat bottom right scroll transparent">
     <div class="banner-header-content-wrapper">
         <div class="banner-header-content">
             <div class="grid-container">
                 <div class="cell large-12">
                     <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-2">
                        <div class="cell">
-                            <h1>
-                                <span>Making your brand</span>
-                                Easy to find & hard to ignore
-                            </h1>
-
-                            <p>The company envisions the client’s success through achieving its forecasts for revenue + profit during the transition time.</p>
-
-                            <p>As a results- focused firm, we deliver even stronger results with the use of our expertise.</p>
-
-                            
+                            <?php echo get_the_content() ?>
                             <div class="booknow">
-                                <a href="#" class="booknow-btn">book now</a>
-                                    
+                                <a href="#book" class="booknow-btn">book now</a>
                                 <div>
                                     <span>*We won't charge you<br>until results delivered.</span>
                                 </div>
@@ -41,38 +31,21 @@
         <div class="intro grid-container">
             <div class="grid-x grid-padding-x">
                 <div class="cell medium-10 large-10 medium-offset-1 large-offset-1">
-                    <h2>STRATEGY & DIGITAL MARKETING </h2>
-                    <p>Every brand has its own business model and creating an impact online depends upon what medium the business would fall. Focused on delivering more than just brand awareness, we'll help you meet your prospects from the virtual world to reality.</p>
+                    <h2><?php echo $item_id = get_post_meta( $post->ID, '_cmb_wayforward_heading', true ) ?></h2>
+                    <p><?php echo $item_id = get_post_meta( $post->ID, '_cmb_wayforward_desc', true ) ?></p>
                 </div>
             </div>
         </div>
 
         <div class="services grid-container">
             <div class="grid-x grid-padding-x small-up-1 medium-up-5 large-up-5">
-                <div class="cell">
-                        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/social-marketing.png ?>" alt="">
-                    <span>Social Media Marketing (SMM)</span>
-                </div>
-
-                <div class="cell">
-                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/seo.png ?>" alt="">
-                    <span>Search Engine Marketing (SEM)</span>
-                </div>
-
-                <div class="cell">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/stategic.png? >" alt="">
-                    <span>Strategic</span>
-                </div>
-
-                <div class="cell">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/content-management.png ?>" alt="">
-                    <span>Content Management</span>
-                </div>
-
-                <div class="cell">
-                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/research.png ?>" alt="">
-                    <span>Market Research</span>
-                </div>
+                <?php $list_services = get_post_meta( $post->ID, '_cmb_services_list_inner', true ); ?>
+                <?php foreach ($list_services as $services ): ?>
+                    <div class="cell">
+                        <img src="<?php echo $services[ 'image' ] ?>" alt="<?php echo $services[ 'title' ] ?>">
+                        <span><?php echo $services[ 'title' ] ?></span>
+                    </div>
+                <?php endforeach ?>
             </div>
         </div>
 
@@ -89,13 +62,12 @@
         <div class="grid-container">
             <div class="grid-x grid-padding-x">
                 <div class="cell medium-10 large-10">
-                    <span>Getting good engagements but ZERO conversions?<br>Let Us Help You 3X Your ROI!</span>
+                    <?php echo $item_id = get_post_meta( $post->ID, '_cmb_wayforward_cta_desc', true ) ?>
                 </div>
-
                 <div class="cell medium-2 large-2">
                     <div class="booknow-wrapper">
                         <div class="booknow-content">
-                            <a href="#" class="booknow-btn">book now</a>
+                            <a href="<?php echo $item_id = get_post_meta( $post->ID, '_cmb_wayforward_cta_url', true ) ?>" class="booknow-btn">book now</a>
                         </div>
                     </div>
                 </div>
@@ -107,28 +79,21 @@
         <div class="intro grid-container">
             <div class="grid-x grid-padding-x">
                 <div class="cell medium-10 large-10 medium-offset-1 large-offset-1">
-                    <h2>BRANDING & CREATIVE SERVICES</h2>
-                    <p>Leverage your brand strategy and amplify your business in the online world.<br>We'll help you create effective means of communication to easily connect within your competitive market.</p>
+                    <h2><?php echo $item_id = get_post_meta( $post->ID, '_cmb_branding_heading', true ) ?></h2>
+                    <p><?php echo $item_id = get_post_meta( $post->ID, '_cmb_branding_desc', true ) ?></p>
                 </div>
             </div>
         </div>
 
         <div class="services grid-container">
             <div class="grid-x grid-padding-x small-up-1 medium-up-3 large-up-3">
-                <div class="cell">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/graphic-design.png ?>" alt="">
-                    <span>Graphic Design</span>
-                </div>
-
-                <div class="cell">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/online.png ?>" alt="">
-                    <span>Online Business Design & Development</span>
-                </div>
-
-                <div class="cell">
-                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/video-camera.png?>" alt="">
-                    <span>Motion Graphics Video</span>
-                </div>
+                <?php $list_branding = get_post_meta( $post->ID, '_cmb_branding_list_inner', true ); ?>
+                <?php foreach ($list_branding as $branding): ?>
+                     <div class="cell">
+                        <img src="<?php echo $branding[ 'image' ] ?>" alt="<?php $branding[ 'title' ] ?>">
+                        <span><?php echo $branding[ 'title' ] ?></span>
+                    </div>
+                <?php endforeach ?>
             </div>
 
             <div class="learn-more-wrapper grid-container">

@@ -34,3 +34,4 @@ function load_google_fonts() {
 add_action('wp_print_styles', 'load_google_fonts');
 
 require_once ('admin/index.php');
+require_once( 'lib/metabox/metabox.php' );
