@@ -115,4 +115,16 @@
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 0;
     }
+
+    #header-wrapper {
+        padding: 5px 0;
+
+        .title-bar-left {
+            padding: 5px 0;
+
+            img {
+                width: 250px;
+            }
+        }
+    }
 }
