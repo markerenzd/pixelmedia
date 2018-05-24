@@ -1,0 +1,83 @@
+.banner-header-wrapper {
+    background: url("../images/strategy-and-digital-marketing.jpeg") no-repeat bottom right scroll transparent;
+    background-size: cover;
+    display: table;
+    height: 720px;
+    width: 100%;
+
+    .banner-header-content-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+
+        h1 {
+            color: #007EC9;
+            text-transform: uppercase;
+
+            span {
+                display: block;
+                font-weight: 300;
+            }
+        }
+
+        p {
+            color: #007EC9;
+            font-size: 18px;
+        }
+
+        .booknow {
+            text-align: center;
+
+            span {
+                font-size: 12px;
+                color: #007EC9;
+            }
+        }
+    }
+}
+
+.page-content {
+    .intro,
+    .services {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+#strategy-and-digital-marketing {
+    .services {
+        .cell {
+            img {
+                display: block;
+                margin: auto;
+            }
+
+            span {
+                color: #004a70;
+                display: block;
+                font-weight: 900;
+                font-size: 12px;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+#branding-and-creative-services {
+    .services {
+        .cell {
+            img {
+                display: block;
+                margin: auto;
+            }
+
+            span {
+                color: #004a70;
+                display: block;
+                font-weight: 900;
+                font-size: 15px;
+                padding: 10px 0;
+            }
+        }
+    }
+}

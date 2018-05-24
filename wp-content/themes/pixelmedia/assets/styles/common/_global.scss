@@ -1,0 +1,209 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: #404040;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    clear: both;
+    font-weight: 600;
+}
+
+h2 {
+    color: #004e6f;
+}
+
+p {
+    color: #656565;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-bottom: 1.5em;
+}
+
+li {
+    color: #656565;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+dfn, cite, em, i {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 1.5em;
+}
+
+address {
+    margin: 0 0 1.5em;
+}
+
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+
+code, kbd, tt, var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+}
+
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+mark, ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+
+big {
+    font-size: 125%;
+}
+
+.main {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+
+.booknow-btn {
+    background: #ffbd4a;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 189px;
+
+    &:hover {
+        background: #ffa200;
+        color: #fff;
+    }
+}
+
+.learn-more {
+    background: #004e6f;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 40px;
+    text-transform: uppercase;
+}
+
+.grid-container {
+    width: 1200px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.call-to-action-wrapper.gray {
+    background: #e1e1e1;
+
+    span {
+        color: #004A70;
+    }
+}
+
+.call-to-action-wrapper {
+    background: #007ec9;
+    text-align: center;
+    padding: 30px 0;
+
+    span {
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    .cell {
+        position: relative;
+
+        .booknow-wrapper {
+            display: table;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            width: 100%;
+
+            .booknow-content {
+                display: table-cell;
+                vertical-align: middle;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.learn-more-wrapper {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.learn-more-btn {
+    background: #004A70;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 189px;
+
+    &:hover {
+        background: #007EC9;
+        color: #ffffff;
+    }
+} 

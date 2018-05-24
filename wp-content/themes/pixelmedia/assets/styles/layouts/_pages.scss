@@ -1,0 +1,435 @@
+.center-container {
+    background: rgba(0, 138, 199, 0.2588235294);
+    color: #fff;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    text-align: center;
+    top: 0;
+    width: 100%;
+
+    p {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.center-container:after,
+.center-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.center-container:after {
+    content: '';
+    height: 100%;
+    margin-left: -0.25em;
+}
+
+#main-intro {
+    padding: 70px 0;
+    text-align: center;
+
+    p {
+        font-size: 18px;
+    }
+
+    #service-wrapper {
+        padding: 30px 0 80px 0;
+
+        .item-wrapper {
+            img {
+                width: 90px;
+            }
+
+            h2 {
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+#why-us {
+    padding: 80px 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+    #content-graph {
+        text-align: center;
+
+        span {
+            color: #ffbd4a;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+    }
+
+    #marketer-wrapper {
+        display: inline-flex;
+        padding: 35px 0;
+    }
+}
+
+#blog-wrapper {
+    padding: 100px 0;
+
+    article {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.page-title span.breadcrumb_last {
+    color: rgba(255, 255, 255, 0.74) !important;
+}
+
+.page-title {
+    padding: 35px 0;
+    background: #0894D8 none repeat scroll 0 0;
+
+    #breadcrumbs {
+        margin: 0;
+
+        a {
+            color: #fff;
+        }
+
+        span {
+            float: right;
+        }
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #fff;
+        margin: 0;
+    }
+}
+
+#blog {
+    a {
+        font-family: 'Roboto Condensed', sans-serif !important;
+    }
+
+    h2 {
+        display: inline-block;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    article {
+        margin-bottom: 50px;
+
+        p {
+            font-weight: 400;
+        }
+
+        li {
+            margin-bottom: 1.2em;
+        }
+    }
+
+    .blog-content {
+        border-bottom: 1px solid #ececec;
+        padding: 30px 0 40px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .icon {
+        background-color: #24A0DE;
+        border-radius: 3px;
+        color: #fff;
+        display: block;
+        font-size: 24px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        top: 0;
+        width: 48px;
+    }
+
+    .meta {
+        bottom: 5px;
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0;
+        position: relative;
+        width: 100%;
+
+        li {
+            padding-right: 20px;
+            font-size: 13px;
+        }
+    }
+
+    .blog-info {
+        margin-bottom: 10px;
+        margin-left: 68px;
+    }
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination .current {
+    padding: inherit !important;
+}
+
+// .pagination > li {
+//     display: inline;
+// }
+
+.pagination > li > a,
+.pagination > li > span {
+    position: data-relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    z-index: 3;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .current > a,
+.pagination > .current > span,
+.pagination > .current > a:hover,
+.pagination > .current > span:hover,
+.pagination > .current > a:focus,
+.pagination > .current > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.wrapper-reccent {
+    h3 {
+        font-size: 15px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 500;
+    }
+
+    .recent-list {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+
+        .recent-time {
+            color: #a1a1a1;
+            display: block;
+            font-size: 11px;
+        }
+
+        .recent-title {
+            display: inline;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        li {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            list-style-type: none;
+
+            a {
+                color: #888888;
+                padding: 2px 0;
+                line-height: 30px;
+
+                img {
+                    border: none !important;
+                    box-shadow: none !important;
+                    display: inline;
+                    float: left;
+                    margin: 2px 10px 2px 0;
+                    padding: 0px !important;
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+    #recentcomments {
+        li {
+            font-size: 14px;
+            padding: 5px 0;
+
+            a {
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.wrapper-reccent {
+    .widget {
+        padding: 30px 0;
+    }
+}
+
+#hello-intro {
+    height: 700px;
+    background-position: 50% 50% !important;
+    background-attachment: fixeds;
+    background-color: #222;
+    background-size: cover !important;
+    padding: 0;
+    position: relative;
+
+    .intro {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+        padding: 0 15px;
+        color: #fff;
+
+        span {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 90px;
+        }
+    }
+}
+
+#creative-wrapper {
+    padding: 50px 0;
+
+    h2 {
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+#marketing-wrapper {
+    padding: 80px 0;
+    text-align: center;
+    background: #f1f8fc;
+
+    span {
+        color: #008bc8;
+        font-size: 30px;
+    }
+
+    .bottom-content {
+        h3 {
+            color: #ffbd4a;
+        }
+
+        p {
+            color: #008bc8;
+            font-size: 25px;
+        }
+    }
+}

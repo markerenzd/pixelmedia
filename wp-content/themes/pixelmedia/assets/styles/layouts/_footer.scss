@@ -1,0 +1,57 @@
+#main-footer {
+    padding: 60px 0 20px 0;
+    background: #001e2c;
+    color: #fff;
+
+    .social-media {
+        li {
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: inline-flex;
+
+            .fa {
+                font-size: 45px;
+                padding-right: 30px;
+                padding-top: 60px;
+            }
+        }
+    }
+
+    #copywrite {
+        padding-top: 50px;
+    }
+
+    #quick-links {
+        h4 {
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        ul {
+            display: inline-block;
+
+            a {
+                padding: 10px 0;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+    }
+
+    #footer-form {
+        span {
+            font-size: 27px;
+            text-align: center;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .booknow-btn {
+            border: none;
+        }
+    }
+}
