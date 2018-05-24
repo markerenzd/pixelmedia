@@ -1,3 +1,11 @@
+.current-menu-item {
+    a {
+        color: #00405a !important;
+        font-weight: 900 !important;
+        border-bottom: 3px solid #00405a;
+    }
+}
+
 #top-cta-wrapper {
     border-bottom: 1px solid #ececec;
 
@@ -48,7 +56,7 @@
 
     .title-bar {
         background: #fff;
-        padding: 20px  0;
+        padding: 10px 0;
     }
 
     .menu {
@@ -88,10 +96,13 @@
 
         ul {
             li {
+                padding-right: 30px;
+
                 a {
                     color: #000;
                     font-size: 14px;
                     font-weight: 500;
+                    padding: 10px 0;
                 }
             }
         }
