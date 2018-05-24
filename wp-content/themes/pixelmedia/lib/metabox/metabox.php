@@ -155,7 +155,6 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 		)
 	);
 
-
 	$meta_boxes['field_group'] = array(
 		'id'         => 'field_group',
 		'title'      => __( 'Benifits List', 'cmb' ),
@@ -201,7 +200,6 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 		),
 	);
 
-
 	$meta_boxes['career_page'] = array(
 		'id'         => 'career_page',
 		'title'      => __( 'Introduction Text', 'cmb' ),
@@ -232,7 +230,6 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 		)
 	);
 
-
 	$meta_boxes['benifit_section'] = array(
 		'id'         => 'benifit_section',
 		'title'      => __( 'Benifit Section', 'cmb' ),
@@ -257,10 +254,6 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 		
 		)
 	);	
-
-
-
-
 	/**
 	 * Metabox for an options page. Will not be added automatically, but needs to be called with
 	 * the `cmb_metabox_form` helper function. See wiki for more info.
@@ -279,5 +272,4 @@ function cmb_initialize_cmb_meta_boxes() {
 
 	if ( ! class_exists( 'cmb_Meta_Box' ) )
 		require_once 'init.php';
-
 }
