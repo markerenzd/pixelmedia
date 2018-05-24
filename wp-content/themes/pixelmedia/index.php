@@ -17,72 +17,45 @@
 					<?php echo $data['why_desc'] ?>
 			</div>
 			<div id="service-wrapper" class="grid-x grid-padding-x small-up-1 medium-up-3 large-up-3">
-				<div class="item cell wow fadeIn" data-wow-delay="0.3s">
-				 	<div class="item-wrapper">
-					 	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/content.png ?>" alt="">
-					 	<h2>Increase Your Website Conversion Rates</h2>
-				 	</div>
-				</div>
-				<div class="item cell wow fadeIn " data-wow-delay="0.6s">
-					<div class="item-wrapper">
-					 	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/design-development.png ?>" alt="">
-					 	<h2>Grow Your Audience & Strengthen Your Brand</h2>
-					</div>
-				</div>
-				<div class="item cell wow fadeIn" data-wow-delay="0.9s">
-					<div class="item-wrapper">
-					 	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/online-market.png ?>" alt="">
-					 	<h2>Expand YOur Marketing Channel</h2>
-				 	</div>
-				</div>
+				<?php $why_list = $data['why_list'] ?>
+					<?php foreach ($why_list as $why_item): ?>
+						<div class="item cell wow fadeIn" data-wow-delay="0.3s">
+						 	<div class="item-wrapper">
+							 	<img src="<?php echo $why_item['url'] ?>" alt="<?php echo $why_item['description'] ?>">
+							 	<h2><?php echo $why_item['title'] ?></h2>
+						 	</div>
+						</div><!-- #item -->
+					<?php endforeach ?>
 					<a class="learn-more" href="<?php  echo $data['why_url_plan'] ?>">View Our Winning Plans</a>
 			</div><!-- #service-wrapper -->
 		</div>
 	</div><!-- #main-wrapper -->
 </div><!-- #main-intro -->
 </div>
+
 <div id="why-us" class="clearfix" style="background:url('<?php echo get_bloginfo('template_url') ?>/assets/images/background-2.jpg ?>');" >
 	<div id="why-wrapper" class="grid-container"> 
 		<div class="grid-x grid-padding-x">
 			<div id="infograph" class="cell large-6">
-				<img class="wow fadeInLeftBig" src="<?php echo get_bloginfo('template_url') ?>/assets/images/info-graph.png ?>" alt="">
+				<img class="wow fadeInLeftBig" src="<?php echo $data['who_image'] ?>" alt="who-we-are">
 			</div>
-			<div id="content-graph" class="cell large-6  wow fadeInRightBig">
-				<h2>Who We Are</h2>
-				<span>Poised for ‘Marketing Innovation with a Creative Edge</span>
-				<p>We know our market, we choose to whom we market. When it comes to helping brands succeed, we set our full potential in producing high quality work; balancing work of art & science. We create, plan and deliver great results in orer to broaden the recognition your business truly deserves!  </p>
-				<span class="left">#digitalmarketingcertified</span><span class="right">#webmastercertified</span>
+			<div id="content-graph" class="cell large-6 wow fadeInRightBig">
+				<h2><?php echo $data['who_heading'] ?></h2>
+				<?php echo $data['who_desc']; ?>
 				<div id="marketer-wrapper" class="grid-x grid-padding-x small-up-1 medium-up-3 large-up-3">
-					<div class="item cell wow fadeIn" data-wow-delay="0.3s">
-					 	<div class="item-wrapper">
-						 	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/google.png ?>" alt="">
-					 	</div>
-					</div>
-					<div class="item cell wow fadeIn " data-wow-delay="0.6s">
-						<div class="item-wrapper">
-						 	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/marketer.png ?>" alt="">
+					<?php $partnership = $data['who_list'] ?>
+					<?php foreach ($partnership as $partnership_list): ?>
+						<div class="item cell wow fadeIn" data-wow-delay="0.3s">
+						 	<div class="item-wrapper">
+							 	<img src="<?php echo $partnership_list['url'] ?>" alt="<?php echo $partnership_list['title'] ?>">
+						 	</div>
 						</div>
-					</div>
-					<div class="item cell wow fadeIn" data-wow-delay="0.9s">
-						<div class="item-wrapper">
-						 	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/facebook.png ?>" alt="">
-					 	</div>
-					</div>
-			</div>
+					<?php endforeach ?>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 <div class="remodal" data-remodal-id="modal"
   data-remodal-options="hashTracking: false, closeOnOutsideClick: false">

@@ -130,6 +130,44 @@ $of_options[] = array( 	"name" 		=> "Heading",
 						"std" 		=> "Default Value",
 						"type" 		=> "text"
 				);
+
+$of_options[] = array( 	"name" 		=> "Why us list",
+						"desc" 		=> "Unlimited slider with drag and drop sortings.",
+						"id" 		=> "why_list",
+						"std" 		=> "",
+						"type" 		=> "slider"
+				);
+
+$of_options[] = array( 	"name" 		=> "Who We Are",
+						"type" 		=> "heading"
+				);
+
+$of_options[] = array( 	"name" 		=> "Image left upload",
+						"desc" 		=> "Upload images using native media uploader from Wordpress 3.5+.",
+						"id" 		=> "who_image",
+						"std" 		=> "",
+						"type" 		=> "upload"
+				);
+
+$of_options[] = array( 	"name" 		=> "Heading",
+						"desc" 		=> "A text input field.",
+						"id" 		=> "who_heading",
+						"std" 		=> "Default Value",
+						"type" 		=> "text"
+				);
+
+$of_options[] = array( 	"name" 		=> "Text area sub heading",
+						"id" 		=> "who_desc",
+						"std" 		=> "",
+						"type" 		=> "textarea"
+				);
+
+$of_options[] = array( 	"name" 		=> "Partnership",
+						"desc" 		=> "Unlimited slider with drag and drop sortings.",
+						"id" 		=> "who_list",
+						"std" 		=> "",
+						"type" 		=> "slider"
+				);
 					
 // Backup Options
 $of_options[] = array( 	"name" 		=> "Backup Options",
