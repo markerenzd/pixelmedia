@@ -9,9 +9,9 @@
 	</div><!-- .center-container -->
 </div><!-- #banner-wrapper -->
 
-<div id="main-intro" style="background:url('<?php echo get_bloginfo('template_url') ?>/assets/images/map-pattern.jpg ?>') center center !important;" class="clearfix">
-	<div id="main-wrapper" class="grid-x grid-padding-x">
-		<div class="grid-container">
+<div id="main-intro" style="background:url('<?php echo get_bloginfo('template_url') ?>/assets/images/map-pattern.jpg ?>')">
+	<div id="main-wrapper" class="grid-container">
+		<div class="grid-x grid-padding-x">
 			<div class="cell large-12">
 				<h2 class="wow slideInLeft"><?php echo $data['why_heading'] ?></h2>
 					<?php echo $data['why_desc'] ?>
@@ -35,14 +35,13 @@
 					 	<h2>Expand YOur Marketing Channel</h2>
 				 	</div>
 				</div>
-				<a class="learn-more" href="<?php  echo $data['why_url_plan'] ?>">View Our Winning Plans</a>
-			</div>
-
+					<a class="learn-more" href="<?php  echo $data['why_url_plan'] ?>">View Our Winning Plans</a>
+			</div><!-- #service-wrapper -->
 		</div>
-	</div>
+	</div><!-- #main-wrapper -->
+</div><!-- #main-intro -->
 </div>
-
-<div id="why-us" class="grid-x clearfix" style="background:url('<?php echo get_bloginfo('template_url') ?>/assets/images/background-2.jpg ?>');" >
+<div id="why-us" class="clearfix" style="background:url('<?php echo get_bloginfo('template_url') ?>/assets/images/background-2.jpg ?>');" >
 	<div id="why-wrapper" class="grid-container"> 
 		<div class="grid-x grid-padding-x">
 			<div id="infograph" class="cell large-6">
@@ -74,6 +73,15 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 <div class="remodal" data-remodal-id="modal"
