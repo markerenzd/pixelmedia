@@ -1,3 +1,4 @@
+<?php global $data; ?>
 <div id="banner-wrapper" style="height: 720px;" data-vide-bg="mp4:<?php echo get_stylesheet_directory_uri(); ?>/assets/video/ocean, webm: <?php echo get_stylesheet_directory_uri(); ?>/assets/video/ocean, ogv:<?php echo get_stylesheet_directory_uri(); ?>/assets/video/ocean, poster: <?php echo get_stylesheet_directory_uri(); ?>/assets/video/ocean" data-vide-options="posterType: jpg, loop: true, muted: false">
 	<div class="center-container">
 		<div class="center-block">
@@ -12,9 +13,8 @@
 	<div id="main-wrapper" class="grid-x grid-padding-x">
 		<div class="grid-container">
 			<div class="cell large-12">
-				<h2 class="wow slideInLeft">Why Do Business With Us</h2>
-					<p class="wow slideInRight">Fuelled by an entrepreneurial culture with an experimental "test-and-learn" mindset. We work the smart way</p>
-					<p>In helping you cover your business success, we will </p>
+				<h2 class="wow slideInLeft"><?php echo $data['why_heading'] ?></h2>
+					<?php echo $data['why_desc'] ?>
 			</div>
 			<div id="service-wrapper" class="grid-x grid-padding-x small-up-1 medium-up-3 large-up-3">
 				<div class="item cell wow fadeIn" data-wow-delay="0.3s">
@@ -35,10 +35,11 @@
 					 	<h2>Expand YOur Marketing Channel</h2>
 				 	</div>
 				</div>
+				<a class="learn-more" href="<?php  echo $data['why_url_plan'] ?>">View Our Winning Plans</a>
 			</div>
+
 		</div>
 	</div>
-			<a class="learn-more" href="#">View Our Winning Plans </a>
 </div>
 
 <div id="why-us" class="grid-x clearfix" style="background:url('<?php echo get_bloginfo('template_url') ?>/assets/images/background-2.jpg ?>');" >

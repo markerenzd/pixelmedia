@@ -99,7 +99,6 @@ big {
     padding: 0 !important;
 }
 
-
 .booknow-btn {
     background: #ffbd4a;
     border-radius: 10px;
@@ -124,6 +123,13 @@ big {
     color: #fff;
     padding: 15px 40px;
     text-transform: uppercase;
+    width: 350px;
+    margin: auto;
+
+    &:hover {
+        background: #00405a;
+        color: #fff;
+    }
 }
 
 .grid-container {
@@ -131,17 +137,27 @@ big {
 }
 
 .clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
-.clearfix { display: inline-block; }
+
+.clearfix {
+    display: inline-block;
+}
+
 /* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
 /* close commented backslash hack */
 
 .call-to-action-wrapper.gray {
@@ -206,4 +222,4 @@ big {
         background: #007EC9;
         color: #ffffff;
     }
-} 
+}
