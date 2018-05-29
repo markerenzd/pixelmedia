@@ -7,10 +7,10 @@
 	<div class="page-title">
 		<div id="breadcrumb" class="grid-container">
 			<div class="grid-x grid-padding-x">
-				<div class="large-6 medium-6 small-3 cell">
+				<div class="small-12 large-6 medium-6 small-3 cell">
 					<h1><?php echo get_the_title(); ?></h1>
 				</div>
-				<div class="large-6 medium-6 small-9 cell">
+				<div class="small-12 large-6 medium-6 small-9 cell">
 					<div class="breadcrumbs-wrapper clearfix" typeof="BreadcrumbList" vocab="http://schema.org/">
 		   				 <?php if ( function_exists('yoast_breadcrumb') ) {
 		   				 	yoast_breadcrumb('<p id="breadcrumbs">','</p>');

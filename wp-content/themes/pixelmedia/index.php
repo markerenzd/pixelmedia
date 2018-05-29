@@ -36,10 +36,10 @@
 <div id="why-us" class="clearfix" style="background:url('<?php echo get_bloginfo('template_url') ?>/assets/images/background-2.jpg ?>');" >
 	<div id="why-wrapper" class="grid-container"> 
 		<div class="grid-x grid-padding-x">
-			<div id="infograph" class="cell large-6">
+			<div id="infograph" class="cell medium-6 large-6">
 				<img class="wow fadeInLeftBig" src="<?php echo $data['who_image'] ?>" alt="who-we-are">
 			</div>
-			<div id="content-graph" class="cell large-6 wow fadeInRightBig">
+			<div id="content-graph" class="cell medium-6 large-6 wow fadeInRightBig">
 				<h2><?php echo $data['who_heading'] ?></h2>
 				<?php echo $data['who_desc']; ?>
 				<div id="marketer-wrapper" class="grid-x grid-padding-x small-up-1 medium-up-3 large-up-3">
