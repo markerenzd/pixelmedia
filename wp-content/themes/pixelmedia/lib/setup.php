@@ -73,6 +73,15 @@ function widgets_init() {
   ]);
 
   register_sidebar([
+    'name'          => __('Footer Social Media', 'sage'),
+    'id'            => 'sidebar-socialnet',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);  
+
+  register_sidebar([
     'name'          => __('Quick Links Footer', 'sage'),
     'id'            => 'sidebar-quicklinks',
     'before_widget' => '<section class="widget %1$s %2$s">',

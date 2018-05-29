@@ -4,12 +4,7 @@
 			    <div id="branding" class="cell medium-4 large-4">
 			    	<img src="<?php echo get_bloginfo('template_url') ?>/assets/images/footer-logo.jpg ?>" alt="">
 			    	<div class="social-media">
-			    		<ul>
-			    			<li><i class="fa fa-facebook-square"></i></li>
-			    			<li><i class="fa fa-twitter-square"></i></li>
-			    			<li><i class="fa fa-linkedin-square"></i></li>
-			    			<li><i class="fa fa-instagram"></i></li>
-			    		</ul>
+						<?php dynamic_sidebar( 'sidebar-socialnet' ); ?>
 			    	</div>
 			    	<div id="copywrite">2018 © Pixel X Media. All Rights Reserved.<br>Privacy & Terms of Service</div>
 			    </div>

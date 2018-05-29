@@ -60,6 +60,9 @@
 <div class="remodal" data-remodal-id="modal"
   data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
 
-  <button data-remodal-action="close" class="remodal-close"></button>
-<?php echo do_shortcode('[contact-form-7 id="28" title="Main Contact Form"]') ?>
+ <button data-remodal-action="close" class="remodal-close"></button>
+
+ <div id="main-contactform">
+ 	<?php echo do_shortcode('[contact-form-7 id="28" title="Main Contact Form"]') ?>
+ </div>
 </div>
