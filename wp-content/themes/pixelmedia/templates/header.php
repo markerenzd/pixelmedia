@@ -1,7 +1,7 @@
 <div id="top-cta-wrapper">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
-			<div class="cell large-8">
+			<div class="cell medium-8 large-8">
 				<ul class="cta-list">
 					<div id="phone-text" class="cta-top">
 						<li>
@@ -15,7 +15,7 @@
 					</div>
 				</ul>
 			</div>
-			<div class="cell large-4"> 
+			<div class="cell medium-4 large-4"> 
 				<div class="tagline">
 					<span>Helping you meet your next customers online</span>
 				</div><!-- .tagline -->
@@ -26,16 +26,16 @@
 <div id="header-wrapper">
 	<header id="master-header">
 	    <div data-sticky-container>
-	          <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+	          <div class="title-bar" data-sticky data-options="marginTop:0;">
 	                <div id="header-wrapper" class="grid-container">
-	                      <div class="grid-x grid-padding-x">
-	                          <div class="cell medium-3 large-3 title-bar-left">
+	                        <div class="grid-x grid-padding-x">
+	                            <div class="cell small-12 medium-3 large-3 title-bar-left">
 	                                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/logo.png" alt="gobpo">
-	                          </div>
-	                          <div class="cell medium-9 large-9 title-bar-right">
-	                           <div id="nav-mobile" class="navTrigger">
-	                              <i></i><i></i><i></i>
-	                          </div> 
+	                            </div>
+	                            <div class="cell small-12 medium-9 large-9 title-bar-right">
+    	                            <div id="nav-mobile" class="navTrigger">
+        	                            <i></i><i></i><i></i>
+        	                        </div> 
 	                                  <nav id="site-navigation" class="main-navigation" role="navigation">
 	                                        <?php wp_nav_menu( array( 
 	                                          'menu'           => 'main-menu',

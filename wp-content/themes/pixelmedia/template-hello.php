@@ -9,6 +9,7 @@
 		<div class="intro">	
 			<span>Influencing Through</span>
 			<h1>CREATIVE MARKETING</h1>
+
 		</div>
 	</div>		
 </div>

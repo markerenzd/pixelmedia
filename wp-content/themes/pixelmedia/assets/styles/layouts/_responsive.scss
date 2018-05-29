@@ -1,0 +1,117 @@
+@media only screen 
+and (max-width : 1024px)  {
+    body {
+        .grid-container {
+            width: 100%;
+        }
+
+        #top-cta-wrapper .tagline {
+            font-size: 13px;
+        }
+
+        #master-header #header-wrapper .title-bar-left {
+            padding-left: 30px;
+        }
+    }
+}
+
+@media only screen 
+and (max-width : 968px) {
+    body {
+        #top-cta-wrapper {
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (max-width : 647px) {
+    body {
+        #breadcrumb {
+            text-align: center;
+        }
+
+        .page-title #breadcrumbs span {
+            float: none;
+        }
+
+        #master-header .title-bar {
+            top: 0 !important;
+        }
+
+        .banner-header-wrapper {
+            height: 647px;
+            text-align: center;
+        }
+
+        .call-to-action-wrapper {
+            text-align: center;
+
+            span {
+                font-size: 20px;
+            }
+
+            .cell .booknow-wrapper {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                position: relative;
+            }
+        }
+
+        #top-cta-wrapper {
+            text-align: center;
+        }
+
+        #header-wrapper {
+            text-align: center;
+        }
+
+        #master-header .menu {
+            diplay: inline-block;
+            float: none;
+        }
+
+        #main-footer {
+            text-align: center;
+
+            .cell {
+                margin-bottom: 30px;
+                width: 100%;
+            }
+
+            #footer-form {
+                .footer-heading {
+                    font-size: 24px;
+                }
+
+                input[type='text'],
+                input[type='email'] {
+                    display: inline-block;
+                    width: 90%;
+                }
+
+                .wpcf7-response-output {
+                    display: inline;
+                }
+            }
+        }
+
+        #strategy-and-digital-marketing-wrapper,
+        #branding-and-creatives-wrapper {
+            .call-to-action-wrapper {
+                text-align: center;
+            }
+
+            .service-wrapper {
+                text-align: center;
+
+                .cell {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
